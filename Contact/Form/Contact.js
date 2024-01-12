@@ -54,6 +54,43 @@ JS.Entities.Contact = {
 
   },
 
+  callCustomApi_SayHello: async function () {
+    var execute_t365_SayHelloAPI_Request = {
+      // Parameters
+      t365_Name: "Tiyani", // Edm.String
+
+      getMetadata: function () {
+        return {
+          boundParameter: null,
+          parameterTypes: {
+            t365_Name: {
+              typeName: "Edm.String",
+              structuralProperty: 1
+            }
+          },
+          operationType: 0,
+          operationName: "t365_SayHelloAPI"
+        };
+      }
+    };
+
+    Xrm.WebApi.execute(execute_t365_SayHelloAPI_Request).then(
+      function success(response) {
+        if (response.ok) {
+          return response.json();
+        }
+      }
+    ).then(function (responseBody) {
+      var result = responseBody;
+      console.log(result);
+      // Return Type: mscrm.t365_SayHelloAPIResponse
+      // Output Parameters
+      var t356_sayhellotome = result["t356_SayHelloToMe"]; // Edm.String
+    }).catch(function (error) {
+      console.log(error.message);
+    });
+  },
+
   hideTabAndShowMessage: async function () {
     formContext.ui.tabs.get("details").setVisible(false);
     alert('Details Tab is hidden')
