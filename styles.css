@@ -1,0 +1,42 @@
+/* General styling */
+body {
+  font-family: sans-serif;
+  margin: 40px;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto; /* Center the container */
+}
+
+/* Header */
+.header {
+  text-align: center;
+}
+
+/* Form elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button */
+.btn {
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

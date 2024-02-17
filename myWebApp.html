@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Capture App</title>
+    <style>
+      body {
+        margin: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .ms-Grid {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .ms-Grid-row {
+        margin-bottom: 15px;
+        display: block;
+        line-height: 1.5em;
+        /* width: 100%;*/
+      }
+
+      .ms-Grid-col {
+        flex: 1;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        /* width: calc(100% - 20.5px); */
+      }
+
+      .ms-TextField-field {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      .ms-Button {
+        background-color: #0078d4;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+
+      .ms-Button:hover {
+        background-color: #005a9e;
+      }
+
+      .ms-Button-icon {
+        margin-right: 8px;
+      }
+
+      .ms-Button-label {
+        vertical-align: middle;
+      }
+
+      .ms-Icon {
+        font-size: 16px;
+      }
+      .stacked-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .stacked-list-item {
+    /*   border: 1px solid #ccc;
+      border-radius: 4px; */
+      /* margin-bottom: 2px;
+      padding: 2px; */
+    }
+    .inline-div {
+      display: inline-block;
+      min-width: 150px; /* Optional: Set a specific width */
+      height: 10px; /* Optional: Set a specific height */
+      border: 0px solid #ccc;
+      margin: 10px; /* Optional: Set margin for spacing between divs */
+    }
+
+    .inline-div2 {
+      display: inline-block;
+      min-width: 150px; /* Optional: Set a specific width */
+      height: 10px; /* Optional: Set a specific height */
+      border: 0px solid #ccc;
+      margin: 10px; /* Optional: Set margin for spacing between divs */
+      /* width: calc(100% - 200.5px); */
+      width: 98%;
+    }
+    </style>
+  </head>
+  <body>
+    <ul class="stacked-list">
+      <li class="stacked-list-item">
+    <div class="ms-Grid">
+      <div class="ms-Grid-row">
+        <div class="ms-Grid-col">
+          <h1>Test Capture App</h1>
+        </div>
+      </div>
+    </li>
+    <li class="stacked-list-item">
+      <div class="ms-Grid-row">
+        <div class="inline-div">
+          <label for="name">Name:</label>
+        </div>
+        <div class="inline-div2">
+          <input type="text" id="name" class="ms-TextField-field" />
+        </div>
+      </div>
+    </li>
+    <li class="stacked-list-item">
+      <div class="ms-Grid-row">
+        <div class="inline-div">
+          <label for="email">Email Address:</label>
+        </div>
+        <div class="inline-div2">
+          <input type="email" id="email" class="ms-TextField-field" />
+        </div>
+      </div>
+    </li>
+    <li class="stacked-list-item">
+      <div class="ms-Grid-row">
+        <div class="inline-div">
+          <label for="contact">Contact Number:</label>
+        </div>
+        <div class="inline-div2">
+          <input type="tel" id="contact" class="ms-TextField-field" />
+        </div>
+      </div>
+    </li>
+    <li class="stacked-list-item">
+      <div class="ms-Grid-row">
+        <div class="inline-div">
+          <button class="ms-Button">
+            <span class="ms-Button-icon"
+              ><i class="ms-Icon ms-Icon--Save"></i
+            ></span>
+            <span class="ms-Button-label">Save</span>
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+    </div>
+  </body>
+</html>
